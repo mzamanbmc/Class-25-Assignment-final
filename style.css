@@ -1,0 +1,203 @@
+.pricing-table{
+    background: #F6F9FC;
+    padding-bottom: 80px;
+}
+h2{
+    display: inline-block;
+    position: relative;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background: #3763EB;
+    bottom: 0;
+    left: 40%;
+    margin: auto;
+}
+.single-table{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background: #fff;
+    padding: 50px;
+    border: none;
+    transition: 0.4s;
+}
+.card:hover{
+    background: #3763EB;
+    border-radius: 4px;
+    color: #fff;
+}
+.c-header{
+    margin: 0 50px;
+}
+.c-header p{
+    color: #fff;
+}
+.card:hover strong{
+    animation: effect .8s ease-in 1;
+}
+.card:hover h1{
+    animation: effect .8s ease-in 1;
+}
+.c-header hr{
+    padding-top: 15px;
+}
+.card:hover .c-header hr{
+    animation: effect .8s ease-in 1;
+}
+@keyframes effect{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: #fff;
+    }
+}
+.card:hover li{
+    color: #fff;
+}
+.card:hover .start-btn a{
+    background: #fff;
+    color: #3763EB;
+}
+.card h1{
+    padding: 10px;
+    
+}
+.card ul{
+    list-style: none;
+    margin-top: 25px;
+    padding-left: 0px;
+}
+.card ul li{
+    padding: 6px 0;
+    color: gray;
+}
+.card .start-btn a{
+    text-decoration: none;
+    background: #3763EB;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: auto;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #fff;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.start-btn{
+    position: relative;
+    z-index: 1;
+    
+}
+.start-btn a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #3763EB;
+    border-radius: 20px;
+    z-index: -1;
+    transition: 0.4s;
+}
+.start-btn a:hover::before{
+    width: 100%;
+}
+.card .start-btn a:hover{
+    color: #fff;
+}
+
+/* purchase-now Section */
+
+.purchase-now{
+    background: url(https://i.ibb.co/VJzZRPc/free-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+.purchase-now::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(43, 43, 236, 0.7);
+    z-index: -1;
+}
+.purchase-now h2::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    bottom: 0;
+    left: 40%;
+    margin: auto;
+}
+.purchase-now a{
+    text-decoration: none;
+    background: white;
+    color: #3763EB;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin: auto;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.purchase-now a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #3763EB;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: 0.4s;
+}
+.purchase-now a:hover::after{
+    width: 100%;
+}
+.purchase-now a:hover{
+    color: #fff;
+}
+
+/* Sign-up Section */
+
+.sign-up form{
+    margin-top: 35px;
+}
+.sign-up strong{
+    color: rgb(58, 57, 57);
+    display: block;
+    padding-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.sign-up .btn{
+    font-weight: 600;
+}
+.signup-right{
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.06);
+}
+
+
